@@ -29,6 +29,27 @@
 	  $('#btn5').click(function(){
 		  $('span,#two').css("background","#bfa");
 	  });	
+/*
+	  var tmpFunc = function(i) {
+	  	  	  	  return function(e) {
+	  	  	  	  	  alert('here');
+	  	  	  	  	  alert(e);
+	  	  	  	  };
+	  	  	  };
+*/
+var tmpFunc = function() {
+	alert('here');
+};
+	  var addNodesClickFunction = function(index, node) {
+	  	  	  node.click(tmpFunc);
+	  };
+	  $('div').each(addNodesClickFunction);
+
+
+	$("body").click(function(){
+		alert('here');
+	});
+
   });
   </script>
 </head>
